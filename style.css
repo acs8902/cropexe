@@ -686,4 +686,94 @@ nav {
 
 .btn-cyberpunk:hover::before {
   left: 100%;
+
+}
+/* -------------------------
+   Mobile responsiveness fixes
+   Appended Nov 3, 2025
+   ------------------------- */
+
+/* Prevent any accidental horizontal scroll on small devices */
+body {
+  overflow-x: hidden;
+}
+
+/* Header flex wrapper (replaces inline styles in index.html/about.html) */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Small screens adjustments */
+@media (max-width: 600px) {
+
+  /* Scale header text so it doesn't overflow */
+  .header h1 {
+    font-size: 2rem;     /* reduced from 4rem */
+    line-height: 1.1;
+    word-break: break-word;
+  }
+  .header p {
+    font-size: 0.8rem;
+  }
+
+  /* Stack header content vertically */
+  .header-flex {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  /* Stack buttons / make them full width */
+  .button-group {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .button-group .btn {
+    width: 100%;
+  }
+
+  /* Reduce padding to fit small screens */
+  body {
+    padding: 10px;
+  }
+  .step-card {
+    padding: 15px;
+  }
+
+  /* Upload area text smaller */
+  .upload-placeholder p,
+  .upload-placeholder small {
+    font-size: 0.75rem;
+  }
+
+  /* Make cropping instruction text smaller */
+  .crop-instructions {
+    font-size: 0.75rem;
+  }
+
+  /* Ensure grids become single column */
+  .exams-grid,
+  .features-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Make preview image responsive and not exceed container */
+  .preview-image {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  /* Make the container more compact */
+  .container {
+    margin: 0 auto;
+    border-radius: 6px;
+  }
+}
+
+/* Override preview-image default fixed width */
+.preview-image {
+  max-width: 100%;
+  height: auto;
 }
