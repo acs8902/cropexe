@@ -112,7 +112,7 @@
         <div class="upload-area" id="upload-area">
           <input type="file" id="image-input" accept="image/*,.pdf,.heic,.heif,.tiff,.tif,.cr2,.nef,.arw,.dng,.raf,.orf,.rw2,.srw,.ico" class="file-input">
           <div class="upload-placeholder">
-            <div class="upload-icon">💾</div>
+            <div class="upload-icon" aria-hidden="true">💾</div>
             <p><strong>click to browse</strong> and select your image</p>
             <small class="supported-formats">Supports: JPG, PNG, WEBP, GIF, SVG, PDF, HEIC, TIFF, RAW camera files, and 20+ formats</small>
             <small class="format-note">PDF files will be automatically converted to images for cropping</small>
@@ -155,7 +155,7 @@
   </div>
 
   <!-- Loading -->
-  <div id="loading-overlay" class="loading-overlay hidden">
+  <div id="loading-overlay" class="loading-overlay hidden" aria-live="assertive">
     <div class="loading-spinner"></div>
     <p>Processing your image...</p>
   </div>
@@ -166,6 +166,7 @@
   <script src="main.js"></script>
 </body>
 </html>
+
 
 
 
