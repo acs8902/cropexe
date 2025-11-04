@@ -53,7 +53,14 @@
   </script>
   <title>Indian Exam Photo & Signature Tool</title>
   <link rel="stylesheet" href="./style.css">
+  <!-- Performance: non-blocking CSS for Cropper -->
+<link rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css">
+</noscript>
 </head>
 <body>
   <div class="container">
@@ -168,6 +175,7 @@
   <script src="main.js"></script>
 </body>
 </html>
+
 
 
 
