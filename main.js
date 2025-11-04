@@ -1,3 +1,18 @@
+// Ensure PDF.js is loaded before using pdfjsLib
+async function ensurePdfJs() {
+  if (!window.pdfjsLib) {
+    await new Promise((resolve, reject) => {
+      const script = document.createElement('script');
+      script.src = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js';
+      script.onload = resolve;
+      script.onerror = reject;
+      document.head.appendChild(script);
+    });
+  }
+
+  // Set the worker path AFTER pdfjsLib exists
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
+}
 const EXAM_SPECS = {
   'UPSC': {
     'photo': { width: 200, height: 230, format: 'JPEG', maxSize: 50, dpi: 110 },
@@ -401,4 +416,5 @@ handleImageUpload(file) {
 }
 
 document.addEventListener('DOMContentLoaded', () => new ExamPhotoTool());
+
 
