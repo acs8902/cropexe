@@ -71,10 +71,6 @@ const SUPPORTED_FORMATS_DISPLAY = [
   'HEIC', 'HEIF', 'TIFF', 'TIF', 'CR2', 'NEF', 'ARW', 'DNG',
   'RAF', 'ORF', 'RW2', 'SRW', 'ICO'
 ];
-
-// Set up pdf.js worker
-pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
-
 class ExamPhotoTool {
   constructor() {
     this.currentExam = '';
@@ -217,6 +213,7 @@ handleImageUpload(file) {
 
   async handlePdfUpload(file) {
     try {
+      await ensurePdfJs(); // ✅ make sure pdf.js is loaded before use
       this.updateUploadArea('Converting PDF to image...', '⏳');
       
       const arrayBuffer = await file.arrayBuffer();
@@ -416,5 +413,6 @@ handleImageUpload(file) {
 }
 
 document.addEventListener('DOMContentLoaded', () => new ExamPhotoTool());
+
 
 
