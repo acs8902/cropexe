@@ -344,7 +344,7 @@ handleImageUpload(file) {
 
     document.getElementById('preview-container').innerHTML = `
       <div class="preview-content">
-        <img src="${imgURL}" class="preview-image">
+        <img src="${imgURL}" class="preview-image" alt="Processed exam image preview">
         <div class="preview-specs">
           <h4>✅ Image Ready</h4>
           <p><strong>Size:</strong> ${sizeKB} KB (max ${specs.maxSize} KB)</p>
@@ -401,3 +401,4 @@ handleImageUpload(file) {
 }
 
 document.addEventListener('DOMContentLoaded', () => new ExamPhotoTool());
+
