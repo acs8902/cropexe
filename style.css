@@ -777,3 +777,16 @@ body {
   max-width: 100%;
   height: auto;
 }
+body {
+  color: #e8e8e8;
+}
+
+.upload-placeholder p,
+.upload-placeholder small {
+  color: #cccccc !important;
+}
+
+footer p,
+.disclaimer {
+  color: #cccccc !important;
+}
