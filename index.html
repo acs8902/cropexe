@@ -3,81 +3,127 @@
 <head>
   <meta charset="UTF-8">
   <!-- Performance: preconnect to CDN -->
-<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO basic meta -->
-  <title>Indian Exam Photo & Signature Tool — Crop, compress & download</title>
-  <meta name="description" content="Crop, resize and compress exam photos & signatures (UPSC, SSC, IBPS) fully in-browser. No uploads, supports PDF/HEIC, fast and free.">
-  <link rel="canonical" href="http://cropexe.in/">
+  
+  <!-- Enhanced SEO Meta Tags -->
+  <title>CropExe - Free Exam Photo & Signature Tool | UPSC, SSC, IBPS Photo Crop</title>
+  <meta name="description" content="Free browser-based tool to crop, resize and compress exam photos & signatures for UPSC, SSC, IBPS. 100% private - no server uploads. Supports PDF/HEIC conversion.">
+  <meta name="keywords" content="UPSC photo crop, SSC signature resize, IBPS photo tool, exam photo compressor, Indian exam photo, free image cropping, privacy photo editor, PDF to image converter">
+  <link rel="canonical" href="https://cropexe.in/">
 
-  <!-- Indexing control -->
-  <meta name="robots" content="index, follow">
+  <!-- Indexing & Crawling -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <meta name="bingbot" content="index, follow">
 
-  <!-- Open Graph -->
+  <!-- Open Graph Enhanced -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Indian Exam Photo & Signature Tool — Crop & Compress">
-  <meta property="og:description" content="Crop, resize and compress exam photos & signatures for UPSC, SSC, IBPS — all processing happens in your browser.">
-  <meta property="og:url" content="http://cropexe.in/">
-  <meta property="og:image" content="http://cropexe.in/og-image.jpg">
+  <meta property="og:title" content="CropExe - Free Exam Photo & Signature Tool for Indian Exams">
+  <meta property="og:description" content="Crop, resize and compress exam photos & signatures for UPSC, SSC, IBPS. All processing happens in your browser - no uploads required.">
+  <meta property="og:url" content="https://cropexe.in/">
+  <meta property="og:image" content="https://cropexe.in/og-image.jpg">
   <meta property="og:site_name" content="CropExe">
+  <meta property="og:locale" content="en_IN">
 
-  <!-- Twitter Card -->
+  <!-- Twitter Card Enhanced -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Indian Exam Photo & Signature Tool">
-  <meta name="twitter:description" content="Crop and compress exam photos & signatures client-side. Supports many formats including PDF and HEIC.">
-  <meta name="twitter:image" content="http://cropexe.in/og-image.jpg">
+  <meta name="twitter:title" content="CropExe - Free Exam Photo Tool">
+  <meta name="twitter:description" content="Crop and compress exam photos & signatures for Indian exams. Supports PDF and HEIC conversion.">
+  <meta name="twitter:image" content="https://cropexe.in/og-image.jpg">
+  <meta name="twitter:site" content="@CropExe">
 
-  <!-- JSON-LD structured data -->
+  <!-- Enhanced JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "WebSite",
-        "@id": "http://cropexe.in/#website",
-      "url": "http://cropexe.in/",
-      "name": "CropExe - Exam Photo Tool",
-      "description": "Crop, compress and prepare exam photos and signatures for Indian competitive exams.",
-      "inLanguage": "en"
+        "@id": "https://cropexe.in/#website",
+        "url": "https://cropexe.in/",
+        "name": "CropExe - Exam Photo & Signature Tool",
+        "description": "Free browser-based tool for cropping and compressing exam photos and signatures for Indian competitive exams",
+        "inLanguage": "en",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://cropexe.in/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
       },
       {
         "@type": "Organization",
-        "@id": "http://cropexe.in/#organization",
+        "@id": "https://cropexe.in/#organization",
         "name": "CropExe",
-        "url": "http://cropexe.in/",
+        "url": "https://cropexe.in/",
         "email": "mailto:shivamsinha0106@gmail.com",
+        "description": "Provider of free exam photo and signature preparation tools for Indian competitive exams",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "IN"
+        },
         "sameAs": []
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://cropexe.in/#webapplication",
+        "name": "CropExe Exam Photo Tool",
+        "url": "https://cropexe.in/",
+        "description": "Free browser-based tool for cropping and compressing exam photos and signatures",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "permissions": "browser",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "INR"
+        },
+        "browserRequirements": "Requires JavaScript",
+        "featureList": [
+          "Photo cropping for exams",
+          "Signature resizing",
+          "Image compression",
+          "PDF to image conversion",
+          "HEIC format support",
+          "Privacy-focused processing"
+        ]
       }
     ]
   }
   </script>
-  <title>Indian Exam Photo & Signature Tool</title>
+
+  <!-- Performance & Security -->
+  <link rel="preload" href="style.css" as="style">
+  <link rel="preload" href="main.js" as="script">
+  
+  <title>CropExe - Indian Exam Photo & Signature Tool</title>
   <link rel="stylesheet" href="./style.css">
+  
   <!-- Performance: non-blocking CSS for Cropper -->
-<link rel="preload"
-      href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'">
-<noscript>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css">
-</noscript>
+  <link rel="preload"
+        href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.13/cropper.min.css">
+  </noscript>
 </head>
 <body>
   <div class="container">
     <!-- Header -->
-    <header class="header">
+    <header class="header" role="banner">
       <div class="header-flex">
-        <div>
-          <h1 style="color: #fff;">./crop.exe</h1>
-          <p>resize, compress and crop for UPSC CSE, SSC CGL, IBPS PO exams automatically</p>
+        <div itemscope itemtype="https://schema.org/Organization">
+          <h1 style="color: #fff;" itemprop="name">./crop.exe</h1>
+          <p itemprop="description">resize, compress and crop for UPSC CSE, SSC CGL, IBPS PO exams automatically</p>
         </div>
-        <nav>
+        <nav role="navigation" aria-label="Main navigation">
           <a href="about.html" class="btn-cyberpunk">about us</a>
         </nav>
       </div>
     </header>
 
-    <main class="main-content">
+    <main class="main-content" role="main">
       <!-- Step 1 -->
       <section class="step-card">
         <h2>&lt;&#47;select exam type</h2>
@@ -116,8 +162,8 @@
       <section class="step-card">
         <h2>&lt;&#47;upload your image</h2>
         <label for="image-input" style="display:block; margin-bottom:6px;">
-  Upload Your Photo or Signature
-</label>
+          Upload Your Photo or Signature
+        </label>
         <div class="upload-area" id="upload-area">
           <input type="file" id="image-input" accept="image/*,.pdf,.heic,.heif,.tiff,.tif,.cr2,.nef,.arw,.dng,.raf,.orf,.rw2,.srw,.ico" class="file-input">
           <div class="upload-placeholder">
@@ -137,7 +183,7 @@
           <p>&lt;&#47; maintain the aspect ratio for best results</p>
         </div>
         <div id="image-container" class="image-container">
-          <img id="image-to-crop" class="cropping-image" alt="Image currently being cropped">
+          <img id="image-to-crop" class="cropping-image" alt="Image currently being cropped for exam submission">
         </div>
         <div class="button-group">
           <button id="crop-btn" class="btn btn-primary">crop & process image</button>
@@ -157,7 +203,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
       <p><strong></strong> use light background images for best results.</p>
       <p class="disclaimer">all processing happens in your browser — no uploads to any server.</p>
     </footer>
@@ -175,20 +221,3 @@
   <script src="main.js" defer></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

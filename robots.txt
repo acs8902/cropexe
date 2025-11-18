@@ -1,4 +1,20 @@
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /admin/
+Disallow: /private/
 
-Sitemap: http://cropexe.in/sitemap.xml
+# Crawl delays
+Crawl-delay: 1
+
+# Sitemaps
+Sitemap: https://cropexe.in/sitemap.xml
+Sitemap: https://cropexe.in/sitemap-image.xml
+
+# Specific bots
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0.5
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0.5

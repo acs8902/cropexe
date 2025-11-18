@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
+  
+  <url>
+    <loc>https://cropexe.in/</loc>
+    <image:image>
+      <image:loc>https://cropexe.in/og-image.jpg</image:loc>
+      <image:title>CropExe - Free Exam Photo Tool</image:title>
+      <image:caption>Crop and compress exam photos for UPSC, SSC, IBPS exams</image:caption>
+    </image:image>
+  </url>
+  
+</urlset>

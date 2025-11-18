@@ -3,78 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- SEO basic meta -->
-  <title>About — CropExe Exam Photo Tool</title>
-  <meta name="description" content="Learn about CropExe — the free in-browser photo & signature cropping and compression tool for Indian exams.">
-  <link rel="canonical" href="http://cropexe.in/about.html">
+  
+  <!-- Enhanced SEO Meta Tags -->
+  <title>CropExe - About Our Exam Photo Tool | Free Image Cropping for UPSC, SSC, IBPS</title>
+  <meta name="description" content="Learn about CropExe - the free, privacy-focused browser tool for cropping and compressing exam photos & signatures for Indian competitive exams like UPSC, SSC, IBPS. No server uploads required.">
+  <meta name="keywords" content="exam photo tool, UPSC photo crop, SSC signature resize, IBPS photo compressor, Indian exam photo tool, free image cropping, privacy-focused photo editor">
+  <link rel="canonical" href="https://cropexe.in/about.html">
 
-  <!-- Indexing control -->
-  <meta name="robots" content="index, follow">
+  <!-- Indexing & Crawling -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+  <meta name="bingbot" content="index, follow">
 
-  <!-- Open Graph -->
+  <!-- Open Graph Enhanced -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="About — CropExe Exam Photo Tool">
-  <meta property="og:description" content="About CropExe — the in-browser exam photo and signature tool for UPSC, SSC, IBPS and more.">
-  <meta property="og:url" content="http://cropexe.in/about.html">
-  <meta property="og:image" content="http://cropexe.in/og-image.jpg">
+  <meta property="og:title" content="About CropExe - Free Exam Photo & Signature Tool for Indian Exams">
+  <meta property="og:description" content="Learn about our privacy-focused browser tool for cropping exam photos & signatures for UPSC, SSC, IBPS. 100% free, no uploads required.">
+  <meta property="og:url" content="https://cropexe.in/about.html">
+  <meta property="og:image" content="https://cropexe.in/og-image.jpg">
   <meta property="og:site_name" content="CropExe">
+  <meta property="og:locale" content="en_IN">
 
-  <!-- Twitter Card -->
+  <!-- Twitter Card Enhanced -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="About — CropExe Exam Photo Tool">
-  <meta name="twitter:description" content="About CropExe — in-browser photo & signature cropping for exam submissions.">
-  <meta name="twitter:image" content="http://cropexe.in/og-image.jpg">
+  <meta name="twitter:title" content="About CropExe - Free Exam Photo Tool">
+  <meta name="twitter:description" content="Privacy-focused browser tool for cropping exam photos & signatures. Supports UPSC, SSC, IBPS exams.">
+  <meta name="twitter:image" content="https://cropexe.in/og-image.jpg">
+  <meta name="twitter:site" content="@CropExe">
 
-  <!-- JSON-LD structured data -->
+  <!-- Enhanced JSON-LD Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "WebSite",
-        "@id": "http://cropexe.in/#website",
-      "url": "http://cropexe.in/",
-      "name": "CropExe - Exam Photo Tool",
-      "description": "Crop, compress and prepare exam photos and signatures for Indian competitive exams.",
-      "inLanguage": "en"
+        "@id": "https://cropexe.in/#website",
+        "url": "https://cropexe.in/",
+        "name": "CropExe - Exam Photo & Signature Tool",
+        "description": "Free browser-based tool for cropping and compressing exam photos and signatures for Indian competitive exams",
+        "inLanguage": "en",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://cropexe.in/?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
       },
       {
         "@type": "Organization",
-        "@id": "http://cropexe.in/#organization",
+        "@id": "https://cropexe.in/#organization",
         "name": "CropExe",
-        "url": "http://cropexe.in/",
+        "url": "https://cropexe.in/",
         "email": "mailto:shivamsinha0106@gmail.com",
+        "description": "Provider of free exam photo and signature preparation tools for Indian competitive exams",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "IN"
+        },
         "sameAs": []
+      },
+      {
+        "@type": "AboutPage",
+        "@id": "https://cropexe.in/about.html#webpage",
+        "url": "https://cropexe.in/about.html",
+        "name": "About CropExe - Exam Photo Tool",
+        "description": "Learn about our mission, features, and supported exams for photo and signature preparation",
+        "isPartOf": {
+          "@id": "https://cropexe.in/#website"
+        },
+        "about": {
+          "@id": "https://cropexe.in/#organization"
+        },
+        "inLanguage": "en"
       }
     ]
   }
   </script>
-  <title>About Us - Exam Photo Tool</title>
+
+  <!-- Performance & Security -->
+  <link rel="preload" href="style.css" as="style">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
+  <title>About Us - CropExe Exam Photo Tool</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
     <!-- Header -->
-    <header class="header">
+    <header class="header" role="banner">
       <div class="header-flex">
-        <div>
-          <h1 style="color: #fff;">./about.exe</h1>
-          <p>learn more about our exam photo tool</p>
+        <div itemscope itemtype="https://schema.org/Organization">
+          <h1 style="color: #fff;" itemprop="name">./about.exe</h1>
+          <p itemprop="description">learn more about our exam photo tool</p>
         </div>
-        <nav>
+        <nav role="navigation" aria-label="Main navigation">
           <a href="index.html" class="btn-cyberpunk">back to tool</a>
         </nav>
       </div>
     </header>
 
-    <main class="main-content">
+    <main class="main-content" role="main">
       <!-- About Section -->
-      <section class="step-card full-width">
+      <section class="step-card full-width" itemscope itemtype="https://schema.org/AboutPage">
+        <h1 style="display: none;">About CropExe - Exam Photo & Signature Tool</h1>
         <h2>&lt;&#47;about this project</h2>
         <div class="about-content">
-          <div class="about-section">
+          <div class="about-section" itemprop="mainEntity" itemscope itemtype="https://schema.org/WebApplication">
             <h3>our mission</h3>
-            <p>we created this tool to help students and job applicants in India who struggle with the technical requirements of exam photo and signature submissions. Our goal is to make the process simple, fast, and accessible to everyone.</p>
+            <p itemprop="description">we created this tool to help students and job applicants in India who struggle with the technical requirements of exam photo and signature submissions. Our goal is to make the process simple, fast, and accessible to everyone.</p>
           </div>
 
           <div class="about-section">
@@ -165,16 +201,10 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
       <p>Made with ❤️ for Indian students and job seekers</p>
       <p class="disclaimer">This tool is provided free of charge. Always verify the final output meets your exam requirements.</p>
     </footer>
   </div>
 </body>
 </html>
-
-
-
-
-
-
